@@ -1,0 +1,422 @@
+'CoopFood,CoopMart,CoopSmile
+
+Sub FillValueCoopFood()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets(2).Activate
+
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    Application.DisplayAlerts = False
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":Q" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+'GS25
+Sub FillValueGS25()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets(2).Activate
+
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    Application.DisplayAlerts = False
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":Q" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+'711
+Sub FillValue711()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets(1).Activate
+
+Maxrow = Cells(Rows.Count, 2).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    application.displayalerts = false
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+'Fill row
+
+        Range(ColumnLetter & "2" & ":Q" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+'BigC
+Sub FillValue()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    application.displayalerts = false
+    Sheets("Simple Fields").Select
+    Range("A2:G2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":Q" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+'SaiGonHD
+Sub FillValueHD()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    application.displayalerts = false
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":T" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+'Family
+Sub FillValueFamily()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    application.displayalerts = false
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":O" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+'BSMart
+Sub FillValueBS()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    application.displayalerts = false
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":M" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+'Emart
+Sub FillValueEmart()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    Application.DisplayAlerts = False
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":P" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+        
+End Sub
+
+'Emart
+Sub FillValueTIKI()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    Application.DisplayAlerts = False
+    Sheets("Simple Fields").Select
+    Range("A2:G2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":P" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+        
+End Sub
+'MegaMartket
+Sub FillValueMega()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    Application.DisplayAlerts = False
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":O" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+        
+End Sub
+
+'LOTTE
+Sub FillValueLotte()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    Application.DisplayAlerts = False
+    Sheets("Simple Fields").Select
+    Range("A2:D2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":O" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+        
+End Sub
+
+'CITI
+Sub FillValueCITI()
+Dim lCol As Long
+Dim Maxrow As Long
+
+Worksheets("Tables").Activate
+Maxrow = Cells(Rows.Count, 1).End(xlUp).Row
+
+lCol = ActiveSheet.Cells(2, Columns.Count).End(xlToLeft).Column
+lCol = lCol + 1
+
+ColumnLetter = Split(Cells(2, lCol).Address, "$")(1)
+
+'Copy data header
+    application.displayalerts = false
+    Sheets("Simple Fields").Select
+    Range("A2:F2").Select
+    Selection.Copy
+    Sheets("Tables").Select
+    Range(ColumnLetter & "2").Select
+    ActiveSheet.Paste
+
+
+'Fill row
+
+        Range(ColumnLetter & "2" & ":O" & Maxrow).Select
+        if Maxrow > 2 then
+        Selection.FillDown
+        end if
+        
+End Sub
+
+Sub DeleteHiddenSheets()
+
+Application.DisplayAlerts = False
+
+'PURPOSE: Remove any hidden sheets from the active workbook
+
+'SOURCE: www.TheSpreadsheetGuru.com/the-code-vault
+
+'NOTE: This macro skips over Very Hidden sheets
+
+Dim Removals As Long
+
+'Turn Off Alerts
+
+  Application.DisplayAlerts = False
+
+'Loop Through Each Sheet in Workbook
+
+  For Each sht In ActiveWorkbook.Sheets
+
+    'Test if Sheeet is Hidden
+
+      If sht.Visible = xlSheetHidden Then
+
+        sht.Delete
+
+        Removals = Removals + 1
+
+      End If
+
+  Next sht
+
+End Sub
